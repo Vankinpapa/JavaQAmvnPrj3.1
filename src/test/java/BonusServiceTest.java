@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BonusServiceTest {
     @ParameterizedTest
-    @CsvFileSource (files = "src/test/resources/data.csv")
+    @CsvFileSource(files = "src/test/resources/data.csv")
     void shouldCalculateForRegisteredAndUnderLimit(int expected, int amount, boolean registered) {
         BonusService service = new BonusService();
 
